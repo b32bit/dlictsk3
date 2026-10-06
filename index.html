@@ -565,131 +565,201 @@
             <div class="border-l-4 border-sky-500 pl-4">
                 <h3 class="text-2xl font-bold text-slate-900">แผนผังความสัมพันธ์ ภารกิจ → ระบบ/กิจกรรม</h3>
                 <p class="text-slate-600 text-sm mt-1">
-                    แสดงความเชื่อมโยงระหว่างภารกิจหลักกับระบบ กิจกรรม และกลไกสนับสนุนการปฏิบัติงาน โดยหนึ่งระบบสามารถสนับสนุนได้หลายภารกิจ
+                    คลิกที่แต่ละระบบหรือกิจกรรมเพื่อดูภารกิจที่เกี่ยวข้อง ช่วยให้เห็นความสัมพันธ์ระหว่าง “ภารกิจ” กับ “ระบบ/กิจกรรม” ได้ชัดเจนขึ้น
                 </p>
             </div>
 
-            <div class="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 rounded-3xl p-5 md:p-8 shadow-xl border border-slate-800 text-white overflow-hidden">
-                <div class="grid grid-cols-1 lg:grid-cols-[1fr_auto_1.15fr] gap-4 md:gap-6 items-stretch">
+            <div class="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 rounded-3xl p-5 md:p-8 shadow-xl border border-slate-800 text-white">
+                <div class="flex flex-wrap items-center justify-center gap-2 mb-7">
+                    <span class="px-3 py-1.5 rounded-full bg-cyan-500/15 border border-cyan-400/30 text-cyan-300 text-xs font-semibold">🎯 22 ภารกิจหลัก</span>
+                    <span class="text-slate-500">→</span>
+                    <span class="px-3 py-1.5 rounded-full bg-emerald-500/15 border border-emerald-400/30 text-emerald-300 text-xs font-semibold">🧩 ระบบ / กิจกรรม / กลไกสนับสนุน</span>
+                </div>
 
-                    <!-- Mission side -->
-                    <div class="space-y-4">
-                        <div class="flex items-center gap-3 mb-2">
-                            <div class="w-10 h-10 rounded-xl bg-cyan-500/20 border border-cyan-400/30 flex items-center justify-center text-xl">🎯</div>
-                            <div>
-                                <p class="text-cyan-300 text-xs font-semibold">ชั้นที่ 1</p>
-                                <h4 class="font-bold text-lg">22 ภารกิจหลัก</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+
+                    <details class="group rounded-2xl bg-white/5 border border-cyan-400/20 overflow-hidden">
+                        <summary class="cursor-pointer list-none p-4 hover:bg-cyan-500/10 transition-colors">
+                            <div class="flex items-start justify-between gap-3">
+                                <div>
+                                    <span class="text-[10px] font-bold text-cyan-300">การศึกษาทางไกล</span>
+                                    <h4 class="font-bold text-base mt-1">BIGDATA.DL</h4>
+                                    <p class="text-[11px] text-slate-400 mt-1">ระบบบริการฐานข้อมูลกลางการจัดการศึกษาทางไกล</p>
+                                </div>
+                                <span class="text-cyan-300 text-lg group-open:rotate-90 transition-transform">›</span>
+                            </div>
+                        </summary>
+                        <div class="px-4 pb-4 border-t border-white/10">
+                            <p class="text-[10px] uppercase tracking-wider text-slate-500 mt-3 mb-2">ภารกิจที่เกี่ยวข้อง</p>
+                            <div class="space-y-2">
+                                <div><b class="text-cyan-300">3.</b> ส่งเสริมการจัดการศึกษาทางไกล (DLTV)</div>
+                                <div><b class="text-cyan-300">4.</b> ส่งเสริมคุณภาพการศึกษาทางไกล (DLIT)</div>
+                                <div><b class="text-indigo-300">11.</b> สนับสนุนและบำรุงรักษาอุปกรณ์ DLTV</div>
                             </div>
                         </div>
+                    </details>
 
-                        <div class="space-y-2">
-                            <div class="p-3 rounded-xl bg-cyan-500/10 border border-cyan-400/25">
-                                <div class="flex justify-between items-center gap-2"><span class="font-bold text-sm">1–5</span><span class="text-xs text-cyan-300">5 ภารกิจ</span></div>
-                                <p class="text-sm font-semibold mt-1">ส่งเสริมการศึกษาทางไกล</p>
+                    <details class="group rounded-2xl bg-white/5 border border-violet-400/20 overflow-hidden">
+                        <summary class="cursor-pointer list-none p-4 hover:bg-violet-500/10 transition-colors">
+                            <div class="flex items-start justify-between gap-3">
+                                <div><span class="text-[10px] font-bold text-violet-300">ระบบข้อมูลสารสนเทศ</span><h4 class="font-bold text-base mt-1">MISSK3</h4><p class="text-[11px] text-slate-400 mt-1">ระบบคลังข้อมูล สงขลา 3</p></div>
+                                <span class="text-violet-300 text-lg group-open:rotate-90 transition-transform">›</span>
                             </div>
-                            <div class="p-3 rounded-xl bg-violet-500/10 border border-violet-400/25">
-                                <div class="flex justify-between items-center gap-2"><span class="font-bold text-sm">6–8</span><span class="text-xs text-violet-300">3 ภารกิจ</span></div>
-                                <p class="text-sm font-semibold mt-1">พัฒนาระบบข้อมูลสารสนเทศ</p>
+                        </summary>
+                        <div class="px-4 pb-4 border-t border-white/10"><p class="text-[10px] uppercase tracking-wider text-slate-500 mt-3 mb-2">ภารกิจที่เกี่ยวข้อง</p><div><b class="text-violet-300">8.</b> พัฒนาระบบคลังข้อมูลขนาดใหญ่ (Big Data)</div></div>
+                    </details>
+
+                    <details class="group rounded-2xl bg-white/5 border border-violet-400/20 overflow-hidden">
+                        <summary class="cursor-pointer list-none p-4 hover:bg-violet-500/10 transition-colors">
+                            <div class="flex items-start justify-between gap-3">
+                                <div><span class="text-[10px] font-bold text-violet-300">ระบบบริหาร</span><h4 class="font-bold text-base mt-1">AMSS</h4><p class="text-[11px] text-slate-400 mt-1">ระบบสนับสนุนการบริหารจัดการ</p></div>
+                                <span class="text-violet-300 text-lg group-open:rotate-90 transition-transform">›</span>
                             </div>
-                            <div class="p-3 rounded-xl bg-amber-500/10 border border-amber-400/25">
-                                <div class="flex justify-between items-center gap-2"><span class="font-bold text-sm">9–10</span><span class="text-xs text-amber-300">2 ภารกิจ</span></div>
-                                <p class="text-sm font-semibold mt-1">สารสนเทศเพื่อการบริหาร</p>
+                        </summary>
+                        <div class="px-4 pb-4 border-t border-white/10"><p class="text-[10px] uppercase tracking-wider text-slate-500 mt-3 mb-2">ภารกิจที่เกี่ยวข้อง</p><div><b class="text-violet-300">7.</b> วิจัยและพัฒนาระบบสารสนเทศเพื่อการบริหาร</div></div>
+                    </details>
+
+                    <details class="group rounded-2xl bg-white/5 border border-violet-400/20 overflow-hidden">
+                        <summary class="cursor-pointer list-none p-4 hover:bg-violet-500/10 transition-colors">
+                            <div class="flex items-start justify-between gap-3">
+                                <div><span class="text-[10px] font-bold text-violet-300">ระบบสารสนเทศ</span><h4 class="font-bold text-base mt-1">ระบบรายงานการเกณฑ์เด็กเข้าเรียน</h4><p class="text-[11px] text-slate-400 mt-1">ระบบสารสนเทศสนับสนุนการบริหารจัดการ</p></div>
+                                <span class="text-violet-300 text-lg group-open:rotate-90 transition-transform">›</span>
                             </div>
-                            <div class="p-3 rounded-xl bg-indigo-500/10 border border-indigo-400/25">
-                                <div class="flex justify-between items-center gap-2"><span class="font-bold text-sm">11–16</span><span class="text-xs text-indigo-300">6 ภารกิจ</span></div>
-                                <p class="text-sm font-semibold mt-1">ระบบคอมพิวเตอร์และ ICT</p>
+                        </summary>
+                        <div class="px-4 pb-4 border-t border-white/10"><p class="text-[10px] uppercase tracking-wider text-slate-500 mt-3 mb-2">ภารกิจที่เกี่ยวข้อง</p><div><b class="text-violet-300">7.</b> วิจัยและพัฒนาระบบสารสนเทศเพื่อการบริหาร</div></div>
+                    </details>
+
+                    <details class="group rounded-2xl bg-white/5 border border-amber-400/20 overflow-hidden">
+                        <summary class="cursor-pointer list-none p-4 hover:bg-amber-500/10 transition-colors">
+                            <div class="flex items-start justify-between gap-3">
+                                <div><span class="text-[10px] font-bold text-amber-300">ข้อมูลเพื่อการบริหาร</span><h4 class="font-bold text-base mt-1">DMC</h4><p class="text-[11px] text-slate-400 mt-1">ระบบจัดเก็บข้อมูลนักเรียนรายบุคคล</p></div>
+                                <span class="text-amber-300 text-lg group-open:rotate-90 transition-transform">›</span>
                             </div>
-                            <div class="p-3 rounded-xl bg-emerald-500/10 border border-emerald-400/25">
-                                <div class="flex justify-between items-center gap-2"><span class="font-bold text-sm">17–21</span><span class="text-xs text-emerald-300">5 ภารกิจ</span></div>
-                                <p class="text-sm font-semibold mt-1">บริการเทคโนโลยีสารสนเทศ</p>
+                        </summary>
+                        <div class="px-4 pb-4 border-t border-white/10"><p class="text-[10px] uppercase tracking-wider text-slate-500 mt-3 mb-2">ภารกิจที่เกี่ยวข้อง</p><div><b class="text-amber-300">9.</b> จัดทำสารสนเทศเพื่อการบริหารและการจัดการศึกษา</div></div>
+                    </details>
+
+                    <details class="group rounded-2xl bg-white/5 border border-amber-400/20 overflow-hidden">
+                        <summary class="cursor-pointer list-none p-4 hover:bg-amber-500/10 transition-colors">
+                            <div class="flex items-start justify-between gap-3">
+                                <div><span class="text-[10px] font-bold text-amber-300">ข้อมูลเพื่อการบริหาร</span><h4 class="font-bold text-base mt-1">OBEC Asset</h4><p class="text-[11px] text-slate-400 mt-1">ระบบรายงานข้อมูลสิ่งก่อสร้างและข้อมูลครุภัณฑ์</p></div>
+                                <span class="text-amber-300 text-lg group-open:rotate-90 transition-transform">›</span>
                             </div>
-                            <div class="p-3 rounded-xl bg-rose-500/10 border border-rose-400/25">
-                                <div class="flex justify-between items-center gap-2"><span class="font-bold text-sm">22</span><span class="text-xs text-rose-300">1 ภารกิจ</span></div>
-                                <p class="text-sm font-semibold mt-1">ความร่วมมือและสนับสนุน</p>
+                        </summary>
+                        <div class="px-4 pb-4 border-t border-white/10"><p class="text-[10px] uppercase tracking-wider text-slate-500 mt-3 mb-2">ภารกิจที่เกี่ยวข้อง</p><div><b class="text-amber-300">9.</b> จัดทำสารสนเทศเพื่อการบริหารและการจัดการศึกษา</div></div>
+                    </details>
+
+                    <details class="group rounded-2xl bg-white/5 border border-amber-400/20 overflow-hidden">
+                        <summary class="cursor-pointer list-none p-4 hover:bg-amber-500/10 transition-colors">
+                            <div class="flex items-start justify-between gap-3">
+                                <div><span class="text-[10px] font-bold text-amber-300">ข้อมูลเพื่อการบริหาร</span><h4 class="font-bold text-base mt-1">จัดทำสารสนเทศ จชต / จังหวัดสงขลา</h4><p class="text-[11px] text-slate-400 mt-1">ข้อมูลสารสนเทศพื้นฐานด้านการศึกษา</p></div>
+                                <span class="text-amber-300 text-lg group-open:rotate-90 transition-transform">›</span>
+                            </div>
+                        </summary>
+                        <div class="px-4 pb-4 border-t border-white/10">
+                            <p class="text-[10px] uppercase tracking-wider text-slate-500 mt-3 mb-2">ภารกิจที่เกี่ยวข้อง</p>
+                            <div class="space-y-2">
+                                <div><b class="text-amber-300">9.</b> จัดทำสารสนเทศเพื่อการบริหารและการจัดการศึกษา</div>
+                                <div><b class="text-rose-300">22.</b> สนับสนุนและร่วมมือด้านเทคโนโลยีดิจิทัล</div>
                             </div>
                         </div>
-                    </div>
+                    </details>
 
-                    <!-- Flow connector -->
-                    <div class="hidden lg:flex flex-col items-center justify-center gap-3 px-1">
-                        <div class="text-cyan-300 text-2xl">→</div>
-                        <div class="writing-mode-vertical text-[10px] uppercase tracking-widest text-slate-500">supports</div>
-                        <div class="text-cyan-300 text-2xl">→</div>
-                    </div>
-                    <div class="lg:hidden flex items-center justify-center py-1 text-cyan-300 text-2xl">↓</div>
+                    <details class="group rounded-2xl bg-white/5 border border-amber-400/20 overflow-hidden">
+                        <summary class="cursor-pointer list-none p-4 hover:bg-amber-500/10 transition-colors">
+                            <div class="flex items-start justify-between gap-3">
+                                <div><span class="text-[10px] font-bold text-amber-300">การคุ้มครองข้อมูล</span><h4 class="font-bold text-base mt-1">OBEC PDPA</h4><p class="text-[11px] text-slate-400 mt-1">ระบบการจัดการด้านข้อมูลส่วนบุคคล</p></div>
+                                <span class="text-amber-300 text-lg group-open:rotate-90 transition-transform">›</span>
+                            </div>
+                        </summary>
+                        <div class="px-4 pb-4 border-t border-white/10"><p class="text-[10px] uppercase tracking-wider text-slate-500 mt-3 mb-2">ภารกิจที่เกี่ยวข้อง</p><div><b class="text-amber-300">10.</b> บริหารจัดการคุ้มครองข้อมูลส่วนบุคคล (PDPA)</div></div>
+                    </details>
 
-                    <!-- System/activity side -->
-                    <div class="space-y-4">
-                        <div class="flex items-center gap-3 mb-2">
-                            <div class="w-10 h-10 rounded-xl bg-emerald-500/20 border border-emerald-400/30 flex items-center justify-center text-xl">🧩</div>
-                            <div>
-                                <p class="text-emerald-300 text-xs font-semibold">ชั้นที่ 2</p>
-                                <h4 class="font-bold text-lg">ระบบ / กิจกรรม / กลไกสนับสนุน</h4>
+                    <details class="group rounded-2xl bg-white/5 border border-indigo-400/20 overflow-hidden">
+                        <summary class="cursor-pointer list-none p-4 hover:bg-indigo-500/10 transition-colors">
+                            <div class="flex items-start justify-between gap-3">
+                                <div><span class="text-[10px] font-bold text-indigo-300">โครงสร้างพื้นฐาน ICT</span><h4 class="font-bold text-base mt-1">DCIO สพฐ. / การจัดสรรทรัพยากร ICT</h4><p class="text-[11px] text-slate-400 mt-1">การวางแผนและกำกับมาตรฐานด้าน ICT</p></div>
+                                <span class="text-indigo-300 text-lg group-open:rotate-90 transition-transform">›</span>
+                            </div>
+                        </summary>
+                        <div class="px-4 pb-4 border-t border-white/10">
+                            <p class="text-[10px] uppercase tracking-wider text-slate-500 mt-3 mb-2">ภารกิจที่เกี่ยวข้อง</p>
+                            <div class="space-y-2">
+                                <div><b class="text-indigo-300">12.</b> วางแผนและพัฒนาระบบคอมพิวเตอร์และ ICT</div>
+                                <div><b class="text-indigo-300">15.</b> กำหนดคุณลักษณะเฉพาะ (Spec) คอมพิวเตอร์</div>
                             </div>
                         </div>
+                    </details>
 
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                            <div class="p-4 rounded-xl bg-white/5 border border-white/10">
-                                <p class="text-xs font-bold text-cyan-300 mb-2">การศึกษาทางไกล</p>
-                                <p class="text-sm font-semibold">BIGDATA.DL</p>
-                                <p class="text-[11px] text-slate-400 mt-1">เชื่อมโยงภารกิจ 3, 4, 11</p>
+                    <details class="group rounded-2xl bg-white/5 border border-indigo-400/20 overflow-hidden">
+                        <summary class="cursor-pointer list-none p-4 hover:bg-indigo-500/10 transition-colors">
+                            <div class="flex items-start justify-between gap-3">
+                                <div><span class="text-[10px] font-bold text-indigo-300">Cybersecurity</span><h4 class="font-bold text-base mt-1">สกมช. / แผนบริหารจัดการความเสี่ยง SK3</h4><p class="text-[11px] text-slate-400 mt-1">มาตรการและการบริหารความเสี่ยงด้านความมั่นคงปลอดภัย</p></div>
+                                <span class="text-indigo-300 text-lg group-open:rotate-90 transition-transform">›</span>
                             </div>
-                            <div class="p-4 rounded-xl bg-white/5 border border-white/10">
-                                <p class="text-xs font-bold text-violet-300 mb-2">ข้อมูลและสารสนเทศ</p>
-                                <p class="text-sm font-semibold">MISSK3</p>
-                                <p class="text-[11px] text-slate-400 mt-1">สนับสนุนภารกิจ 8</p>
+                        </summary>
+                        <div class="px-4 pb-4 border-t border-white/10"><p class="text-[10px] uppercase tracking-wider text-slate-500 mt-3 mb-2">ภารกิจที่เกี่ยวข้อง</p><div><b class="text-indigo-300">13.</b> บริหารจัดการความมั่นคงปลอดภัยไซเบอร์</div></div>
+                    </details>
+
+                    <details class="group rounded-2xl bg-white/5 border border-indigo-400/20 overflow-hidden">
+                        <summary class="cursor-pointer list-none p-4 hover:bg-indigo-500/10 transition-colors">
+                            <div class="flex items-start justify-between gap-3">
+                                <div><span class="text-[10px] font-bold text-indigo-300">Digital Office</span><h4 class="font-bold text-base mt-1">e-Office @GDCC</h4><p class="text-[11px] text-slate-400 mt-1">ระบบสำนักงานอิเล็กทรอนิกส์บนโครงสร้างพื้นฐานภาครัฐ</p></div>
+                                <span class="text-indigo-300 text-lg group-open:rotate-90 transition-transform">›</span>
                             </div>
-                            <div class="p-4 rounded-xl bg-white/5 border border-white/10">
-                                <p class="text-xs font-bold text-violet-300 mb-2">ระบบบริหาร</p>
-                                <p class="text-sm font-semibold">AMSS</p>
-                                <p class="text-[11px] text-slate-400 mt-1">สนับสนุนภารกิจ 7</p>
-                            </div>
-                            <div class="p-4 rounded-xl bg-white/5 border border-white/10">
-                                <p class="text-xs font-bold text-amber-300 mb-2">ข้อมูลการศึกษา</p>
-                                <p class="text-sm font-semibold">DMC / OBEC Asset</p>
-                                <p class="text-[11px] text-slate-400 mt-1">สนับสนุนภารกิจ 9</p>
-                            </div>
-                            <div class="p-4 rounded-xl bg-white/5 border border-white/10">
-                                <p class="text-xs font-bold text-amber-300 mb-2">การคุ้มครองข้อมูล</p>
-                                <p class="text-sm font-semibold">OBEC PDPA</p>
-                                <p class="text-[11px] text-slate-400 mt-1">สนับสนุนภารกิจ 10</p>
-                            </div>
-                            <div class="p-4 rounded-xl bg-white/5 border border-white/10">
-                                <p class="text-xs font-bold text-indigo-300 mb-2">โครงสร้างพื้นฐาน ICT</p>
-                                <p class="text-sm font-semibold">DCIO / การจัดสรร ICT</p>
-                                <p class="text-[11px] text-slate-400 mt-1">สนับสนุนภารกิจ 12, 15</p>
-                            </div>
-                            <div class="p-4 rounded-xl bg-white/5 border border-white/10">
-                                <p class="text-xs font-bold text-indigo-300 mb-2">Cybersecurity</p>
-                                <p class="text-sm font-semibold">สกมช. / แผนความเสี่ยง</p>
-                                <p class="text-[11px] text-slate-400 mt-1">สนับสนุนภารกิจ 13</p>
-                            </div>
-                            <div class="p-4 rounded-xl bg-white/5 border border-white/10">
-                                <p class="text-xs font-bold text-indigo-300 mb-2">Digital Office</p>
-                                <p class="text-sm font-semibold">e-Office @GDCC</p>
-                                <p class="text-[11px] text-slate-400 mt-1">สนับสนุนภารกิจ 14, 16</p>
-                            </div>
-                            <div class="p-4 rounded-xl bg-white/5 border border-white/10 sm:col-span-2">
-                                <p class="text-xs font-bold text-emerald-300 mb-2">บริการและการพัฒนาศักยภาพ</p>
-                                <p class="text-sm font-semibold">Google Workspace / Office 365 / OIT+</p>
-                                <p class="text-[11px] text-slate-400 mt-1">สนับสนุนการให้บริการและพัฒนาทักษะดิจิทัลในกลุ่มงานที่ 5</p>
+                        </summary>
+                        <div class="px-4 pb-4 border-t border-white/10">
+                            <p class="text-[10px] uppercase tracking-wider text-slate-500 mt-3 mb-2">ภารกิจที่เกี่ยวข้อง</p>
+                            <div class="space-y-2">
+                                <div><b class="text-indigo-300">14.</b> พัฒนาบริการดิจิทัลภาครัฐ (e-Service)</div>
+                                <div><b class="text-indigo-300">16.</b> พัฒนาและปรับเปลี่ยนสู่สำนักงานดิจิทัล</div>
                             </div>
                         </div>
-                    </div>
+                    </details>
+
+                    <details class="group rounded-2xl bg-white/5 border border-emerald-400/20 overflow-hidden">
+                        <summary class="cursor-pointer list-none p-4 hover:bg-emerald-500/10 transition-colors">
+                            <div class="flex items-start justify-between gap-3">
+                                <div><span class="text-[10px] font-bold text-emerald-300">บริการและพัฒนาศักยภาพ</span><h4 class="font-bold text-base mt-1">Google Workspace / Office 365 / OIT+</h4><p class="text-[11px] text-slate-400 mt-1">เครื่องมือทำงานร่วมกัน บริการสำนักงาน และการส่งเสริมธรรมาภิบาล</p></div>
+                                <span class="text-emerald-300 text-lg group-open:rotate-90 transition-transform">›</span>
+                            </div>
+                        </summary>
+                        <div class="px-4 pb-4 border-t border-white/10">
+                            <p class="text-[10px] uppercase tracking-wider text-slate-500 mt-3 mb-2">ภารกิจที่เกี่ยวข้อง</p>
+                            <div class="space-y-2">
+                                <div><b class="text-emerald-300">17.</b> ให้คำปรึกษาด้านสารสนเทศและเทคโนโลยีดิจิทัล</div>
+                                <div><b class="text-emerald-300">18.</b> ส่งเสริมทักษะการพัฒนาเว็บไซต์</div>
+                                <div><b class="text-emerald-300">19.</b> พัฒนาศักยภาพผู้ดูแลระบบเครือข่าย</div>
+                                <div><b class="text-emerald-300">20.</b> ส่งเสริมทักษะการซ่อมบำรุงเทคโนโลยีดิจิทัล</div>
+                                <div><b class="text-emerald-300">21.</b> ส่งเสริมความรู้และทักษะความเข้าใจดิจิทัล</div>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details class="group rounded-2xl bg-white/5 border border-cyan-400/20 overflow-hidden">
+                        <summary class="cursor-pointer list-none p-4 hover:bg-cyan-500/10 transition-colors">
+                            <div class="flex items-start justify-between gap-3">
+                                <div><span class="text-[10px] font-bold text-cyan-300">การจัดสรรทรัพยากร</span><h4 class="font-bold text-base mt-1">การจัดสรรทรัพยากร ICT ของโรงเรียน</h4><p class="text-[11px] text-slate-400 mt-1">สนับสนุนทรัพยากรเพื่อการจัดการศึกษาทางไกล</p></div>
+                                <span class="text-cyan-300 text-lg group-open:rotate-90 transition-transform">›</span>
+                            </div>
+                        </summary>
+                        <div class="px-4 pb-4 border-t border-white/10"><p class="text-[10px] uppercase tracking-wider text-slate-500 mt-3 mb-2">ภารกิจที่เกี่ยวข้อง</p><div><b class="text-cyan-300">กลุ่มงานที่ 1</b> ส่งเสริมการศึกษาทางไกล</div></div>
+                    </details>
+
                 </div>
 
                 <div class="mt-6 pt-5 border-t border-white/10 grid grid-cols-1 md:grid-cols-3 gap-3">
                     <div class="p-3 rounded-xl bg-white/5 border border-white/10">
-                        <p class="text-xs font-bold text-cyan-300">ความสัมพันธ์แบบหลายต่อหลาย</p>
+                        <p class="text-xs font-bold text-cyan-300">คลิกเพื่อขยาย</p>
+                        <p class="text-[11px] text-slate-400 mt-1">เปิดแต่ละกล่องเพื่อดูชื่อภารกิจที่เกี่ยวข้อง ไม่ต้องจำหมายเลขภารกิจ</p>
+                    </div>
+                    <div class="p-3 rounded-xl bg-white/5 border border-white/10">
+                        <p class="text-xs font-bold text-violet-300">ความสัมพันธ์แบบหลายต่อหลาย</p>
                         <p class="text-[11px] text-slate-400 mt-1">หนึ่งระบบสามารถสนับสนุนหลายภารกิจ และหนึ่งภารกิจสามารถใช้หลายระบบร่วมกัน</p>
                     </div>
                     <div class="p-3 rounded-xl bg-white/5 border border-white/10">
-                        <p class="text-xs font-bold text-violet-300">ระบบไม่ใช่ภารกิจ</p>
+                        <p class="text-xs font-bold text-amber-300">ระบบไม่ใช่ภารกิจ</p>
                         <p class="text-[11px] text-slate-400 mt-1">ระบบ กิจกรรม และกลไก เป็นเครื่องมือสำหรับขับเคลื่อนภารกิจหลัก</p>
-                    </div>
-                    <div class="p-3 rounded-xl bg-white/5 border border-white/10">
-                        <p class="text-xs font-bold text-amber-300">มองเห็นภาพรวม</p>
-                        <p class="text-[11px] text-slate-400 mt-1">ช่วยแสดงบทบาทของแต่ละระบบว่าตอบโจทย์ภารกิจใดของกลุ่มงาน</p>
                     </div>
                 </div>
             </div>
@@ -898,60 +968,3 @@
 
             const radarLabels = [
                 ['ส่งเสริมทางไกล', 'DLTV / DLIT'],
-                ['พัฒนาระบบข้อมูล', 'Big Data'],
-                ['สารสนเทศบริหาร', 'และ PDPA'],
-                ['คอมพิวเตอร์ ICT', 'Cybersecurity'],
-                ['บริการเทคโนโลยี', 'Digital Literacy'],
-                ['ความร่วมมือ', 'และสนับสนุน']
-            ];
-
-            new Chart(ctxRadar, {
-                type: 'radar',
-                data: {
-                    labels: radarLabels,
-                    datasets: [{
-                        label: 'ระดับความสำคัญสมรรถนะ',
-                        data: [90, 85, 88, 95, 82, 80],
-                        fill: true,
-                        backgroundColor: 'rgba(6, 182, 212, 0.2)',
-                        borderColor: '#06b6d4',
-                        pointBackgroundColor: '#0284c7',
-                        pointBorderColor: '#fff',
-                        pointHoverBackgroundColor: '#fff',
-                        pointHoverBorderColor: '#0284c7'
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: { display: false },
-                        tooltip: {
-                            callbacks: {
-                                title: function(tooltipItems) {
-                                    const item = tooltipItems[0];
-                                    let label = item.chart.data.labels[item.dataIndex];
-                                    if (Array.isArray(label)) {
-                                        return label.join(' ');
-                                    } else {
-                                        return label;
-                                    }
-                                }
-                            }
-                        }
-                    },
-                    scales: {
-                        r: {
-                            angleLines: { color: '#e2e8f0' },
-                            suggestedMin: 50,
-                            suggestedMax: 100,
-                            ticks: { display: false }
-                        }
-                    }
-                }
-            });
-
-        });
-    </script>
-</body>
-</html>

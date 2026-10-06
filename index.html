@@ -385,7 +385,7 @@
         <section id="tasks" class="space-y-6 pt-6">
             <div class="border-l-4 border-emerald-500 pl-4 flex justify-between items-end flex-wrap gap-2">
                 <div>
-                    <h3 class="text-2xl font-bold text-slate-900">ทำเนียบ 22 ภารกิจหลัก (Work Breakdown Directory 100%)</h3>
+                    <h3 class="text-2xl font-bold text-slate-900">22 ภารกิจหลัก</h3>
                     <p class="text-slate-600 text-sm mt-1">
                         รายละเอียดขอบเขตงานและคำอธิบายฉบับสมบูรณ์ ปรับอัปเดตตามโครงสร้างภารกิจล่าสุด
                     </p>
@@ -558,6 +558,140 @@
                     </div>
                 </div>
 
+            </div>
+
+        <!-- Mission-to-System Relationship Map -->
+        <section id="relationships" class="space-y-6 pt-6">
+            <div class="border-l-4 border-sky-500 pl-4">
+                <h3 class="text-2xl font-bold text-slate-900">แผนผังความสัมพันธ์ ภารกิจ → ระบบ/กิจกรรม</h3>
+                <p class="text-slate-600 text-sm mt-1">
+                    แสดงความเชื่อมโยงระหว่างภารกิจหลักกับระบบ กิจกรรม และกลไกสนับสนุนการปฏิบัติงาน โดยหนึ่งระบบสามารถสนับสนุนได้หลายภารกิจ
+                </p>
+            </div>
+
+            <div class="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 rounded-3xl p-5 md:p-8 shadow-xl border border-slate-800 text-white overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-[1fr_auto_1.15fr] gap-4 md:gap-6 items-stretch">
+
+                    <!-- Mission side -->
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="w-10 h-10 rounded-xl bg-cyan-500/20 border border-cyan-400/30 flex items-center justify-center text-xl">🎯</div>
+                            <div>
+                                <p class="text-cyan-300 text-xs font-semibold">ชั้นที่ 1</p>
+                                <h4 class="font-bold text-lg">22 ภารกิจหลัก</h4>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <div class="p-3 rounded-xl bg-cyan-500/10 border border-cyan-400/25">
+                                <div class="flex justify-between items-center gap-2"><span class="font-bold text-sm">1–5</span><span class="text-xs text-cyan-300">5 ภารกิจ</span></div>
+                                <p class="text-sm font-semibold mt-1">ส่งเสริมการศึกษาทางไกล</p>
+                            </div>
+                            <div class="p-3 rounded-xl bg-violet-500/10 border border-violet-400/25">
+                                <div class="flex justify-between items-center gap-2"><span class="font-bold text-sm">6–8</span><span class="text-xs text-violet-300">3 ภารกิจ</span></div>
+                                <p class="text-sm font-semibold mt-1">พัฒนาระบบข้อมูลสารสนเทศ</p>
+                            </div>
+                            <div class="p-3 rounded-xl bg-amber-500/10 border border-amber-400/25">
+                                <div class="flex justify-between items-center gap-2"><span class="font-bold text-sm">9–10</span><span class="text-xs text-amber-300">2 ภารกิจ</span></div>
+                                <p class="text-sm font-semibold mt-1">สารสนเทศเพื่อการบริหาร</p>
+                            </div>
+                            <div class="p-3 rounded-xl bg-indigo-500/10 border border-indigo-400/25">
+                                <div class="flex justify-between items-center gap-2"><span class="font-bold text-sm">11–16</span><span class="text-xs text-indigo-300">6 ภารกิจ</span></div>
+                                <p class="text-sm font-semibold mt-1">ระบบคอมพิวเตอร์และ ICT</p>
+                            </div>
+                            <div class="p-3 rounded-xl bg-emerald-500/10 border border-emerald-400/25">
+                                <div class="flex justify-between items-center gap-2"><span class="font-bold text-sm">17–21</span><span class="text-xs text-emerald-300">5 ภารกิจ</span></div>
+                                <p class="text-sm font-semibold mt-1">บริการเทคโนโลยีสารสนเทศ</p>
+                            </div>
+                            <div class="p-3 rounded-xl bg-rose-500/10 border border-rose-400/25">
+                                <div class="flex justify-between items-center gap-2"><span class="font-bold text-sm">22</span><span class="text-xs text-rose-300">1 ภารกิจ</span></div>
+                                <p class="text-sm font-semibold mt-1">ความร่วมมือและสนับสนุน</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Flow connector -->
+                    <div class="hidden lg:flex flex-col items-center justify-center gap-3 px-1">
+                        <div class="text-cyan-300 text-2xl">→</div>
+                        <div class="writing-mode-vertical text-[10px] uppercase tracking-widest text-slate-500">supports</div>
+                        <div class="text-cyan-300 text-2xl">→</div>
+                    </div>
+                    <div class="lg:hidden flex items-center justify-center py-1 text-cyan-300 text-2xl">↓</div>
+
+                    <!-- System/activity side -->
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-500/20 border border-emerald-400/30 flex items-center justify-center text-xl">🧩</div>
+                            <div>
+                                <p class="text-emerald-300 text-xs font-semibold">ชั้นที่ 2</p>
+                                <h4 class="font-bold text-lg">ระบบ / กิจกรรม / กลไกสนับสนุน</h4>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                                <p class="text-xs font-bold text-cyan-300 mb-2">การศึกษาทางไกล</p>
+                                <p class="text-sm font-semibold">BIGDATA.DL</p>
+                                <p class="text-[11px] text-slate-400 mt-1">เชื่อมโยงภารกิจ 3, 4, 11</p>
+                            </div>
+                            <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                                <p class="text-xs font-bold text-violet-300 mb-2">ข้อมูลและสารสนเทศ</p>
+                                <p class="text-sm font-semibold">MISSK3</p>
+                                <p class="text-[11px] text-slate-400 mt-1">สนับสนุนภารกิจ 8</p>
+                            </div>
+                            <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                                <p class="text-xs font-bold text-violet-300 mb-2">ระบบบริหาร</p>
+                                <p class="text-sm font-semibold">AMSS</p>
+                                <p class="text-[11px] text-slate-400 mt-1">สนับสนุนภารกิจ 7</p>
+                            </div>
+                            <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                                <p class="text-xs font-bold text-amber-300 mb-2">ข้อมูลการศึกษา</p>
+                                <p class="text-sm font-semibold">DMC / OBEC Asset</p>
+                                <p class="text-[11px] text-slate-400 mt-1">สนับสนุนภารกิจ 9</p>
+                            </div>
+                            <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                                <p class="text-xs font-bold text-amber-300 mb-2">การคุ้มครองข้อมูล</p>
+                                <p class="text-sm font-semibold">OBEC PDPA</p>
+                                <p class="text-[11px] text-slate-400 mt-1">สนับสนุนภารกิจ 10</p>
+                            </div>
+                            <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                                <p class="text-xs font-bold text-indigo-300 mb-2">โครงสร้างพื้นฐาน ICT</p>
+                                <p class="text-sm font-semibold">DCIO / การจัดสรร ICT</p>
+                                <p class="text-[11px] text-slate-400 mt-1">สนับสนุนภารกิจ 12, 15</p>
+                            </div>
+                            <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                                <p class="text-xs font-bold text-indigo-300 mb-2">Cybersecurity</p>
+                                <p class="text-sm font-semibold">สกมช. / แผนความเสี่ยง</p>
+                                <p class="text-[11px] text-slate-400 mt-1">สนับสนุนภารกิจ 13</p>
+                            </div>
+                            <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                                <p class="text-xs font-bold text-indigo-300 mb-2">Digital Office</p>
+                                <p class="text-sm font-semibold">e-Office @GDCC</p>
+                                <p class="text-[11px] text-slate-400 mt-1">สนับสนุนภารกิจ 14, 16</p>
+                            </div>
+                            <div class="p-4 rounded-xl bg-white/5 border border-white/10 sm:col-span-2">
+                                <p class="text-xs font-bold text-emerald-300 mb-2">บริการและการพัฒนาศักยภาพ</p>
+                                <p class="text-sm font-semibold">Google Workspace / Office 365 / OIT+</p>
+                                <p class="text-[11px] text-slate-400 mt-1">สนับสนุนการให้บริการและพัฒนาทักษะดิจิทัลในกลุ่มงานที่ 5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-5 border-t border-white/10 grid grid-cols-1 md:grid-cols-3 gap-3">
+                    <div class="p-3 rounded-xl bg-white/5 border border-white/10">
+                        <p class="text-xs font-bold text-cyan-300">ความสัมพันธ์แบบหลายต่อหลาย</p>
+                        <p class="text-[11px] text-slate-400 mt-1">หนึ่งระบบสามารถสนับสนุนหลายภารกิจ และหนึ่งภารกิจสามารถใช้หลายระบบร่วมกัน</p>
+                    </div>
+                    <div class="p-3 rounded-xl bg-white/5 border border-white/10">
+                        <p class="text-xs font-bold text-violet-300">ระบบไม่ใช่ภารกิจ</p>
+                        <p class="text-[11px] text-slate-400 mt-1">ระบบ กิจกรรม และกลไก เป็นเครื่องมือสำหรับขับเคลื่อนภารกิจหลัก</p>
+                    </div>
+                    <div class="p-3 rounded-xl bg-white/5 border border-white/10">
+                        <p class="text-xs font-bold text-amber-300">มองเห็นภาพรวม</p>
+                        <p class="text-[11px] text-slate-400 mt-1">ช่วยแสดงบทบาทของแต่ละระบบว่าตอบโจทย์ภารกิจใดของกลุ่มงาน</p>
+                    </div>
+                </div>
             </div>
         </section>
 
